@@ -1,0 +1,41 @@
+{
+	"name": "movie-list",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cross-env NODE_ENV=production node ./server.js",
+		"dev": "cross-env NODE_ENV=development nodemon ./server.js",
+		"lint": "eslint **/*.js",
+		"lint:fix": "eslint --fix **/*.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AntonZenko/movie-list.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AntonZenko/movie-list/issues"
+	},
+	"homepage": "https://github.com/AntonZenko/movie-list#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"express-graphql": "^0.12.0",
+		"graphql": "^15.8.0",
+		"nanoid": "^3.3.7"
+	},
+	"devDependencies": {
+		"eslint": "7.19.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-config-standard": "16.0.3",
+		"eslint-plugin-import": "2.25.3",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "5.2.0",
+		"nodemon": "^2.0.22"
+	}
+}
